@@ -32,16 +32,16 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            LblOpponentDiceNumOne = new Label();
+            LblOpponentDiceNumTwo = new Label();
+            LblPlayerDiceNumOne = new Label();
+            LblPlayerDiceNumTwo = new Label();
+            LblOpponentsDice = new Label();
+            LblYourDice = new Label();
+            LblPlayAgain = new Label();
+            BtnStartGame = new Button();
+            BtnYes = new Button();
+            BtnNo = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -50,6 +50,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = SystemColors.GradientInactiveCaption;
             pictureBox1.Location = new Point(72, 28);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 104);
@@ -58,6 +59,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = SystemColors.GradientInactiveCaption;
             pictureBox2.Location = new Point(271, 28);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(125, 104);
@@ -66,7 +68,8 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(72, 301);
+            pictureBox3.BackColor = SystemColors.GradientInactiveCaption;
+            pictureBox3.Location = new Point(72, 304);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(125, 104);
             pictureBox3.TabIndex = 2;
@@ -74,119 +77,120 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Location = new Point(271, 301);
+            pictureBox4.BackColor = SystemColors.GradientInactiveCaption;
+            pictureBox4.Location = new Point(271, 304);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(125, 104);
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
-            // label1
+            // LblOpponentDiceNumOne
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(106, 72);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 15);
-            label1.TabIndex = 4;
-            label1.Text = "Unknown";
+            LblOpponentDiceNumOne.AutoSize = true;
+            LblOpponentDiceNumOne.Location = new Point(106, 72);
+            LblOpponentDiceNumOne.Name = "LblOpponentDiceNumOne";
+            LblOpponentDiceNumOne.Size = new Size(58, 15);
+            LblOpponentDiceNumOne.TabIndex = 4;
+            LblOpponentDiceNumOne.Text = "Unknown";
             // 
-            // label2
+            // LblOpponentDiceNumTwo
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(304, 72);
-            label2.Name = "label2";
-            label2.Size = new Size(58, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Unknown";
+            LblOpponentDiceNumTwo.AutoSize = true;
+            LblOpponentDiceNumTwo.Location = new Point(304, 72);
+            LblOpponentDiceNumTwo.Name = "LblOpponentDiceNumTwo";
+            LblOpponentDiceNumTwo.Size = new Size(58, 15);
+            LblOpponentDiceNumTwo.TabIndex = 5;
+            LblOpponentDiceNumTwo.Text = "Unknown";
             // 
-            // label3
+            // LblPlayerDiceNumOne
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(106, 350);
-            label3.Name = "label3";
-            label3.Size = new Size(58, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Unknown";
+            LblPlayerDiceNumOne.AutoSize = true;
+            LblPlayerDiceNumOne.Location = new Point(106, 350);
+            LblPlayerDiceNumOne.Name = "LblPlayerDiceNumOne";
+            LblPlayerDiceNumOne.Size = new Size(58, 15);
+            LblPlayerDiceNumOne.TabIndex = 6;
+            LblPlayerDiceNumOne.Text = "Unknown";
             // 
-            // label4
+            // LblPlayerDiceNumTwo
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(304, 350);
-            label4.Name = "label4";
-            label4.Size = new Size(58, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Unknown";
+            LblPlayerDiceNumTwo.AutoSize = true;
+            LblPlayerDiceNumTwo.Location = new Point(304, 350);
+            LblPlayerDiceNumTwo.Name = "LblPlayerDiceNumTwo";
+            LblPlayerDiceNumTwo.Size = new Size(58, 15);
+            LblPlayerDiceNumTwo.TabIndex = 7;
+            LblPlayerDiceNumTwo.Text = "Unknown";
             // 
-            // label5
+            // LblOpponentsDice
             // 
-            label5.Location = new Point(203, 72);
-            label5.Name = "label5";
-            label5.Size = new Size(66, 39);
-            label5.TabIndex = 8;
-            label5.Text = "Opponents       dice";
+            LblOpponentsDice.Location = new Point(203, 72);
+            LblOpponentsDice.Name = "LblOpponentsDice";
+            LblOpponentsDice.Size = new Size(66, 39);
+            LblOpponentsDice.TabIndex = 8;
+            LblOpponentsDice.Text = "Opponents       dice";
             // 
-            // label6
+            // LblYourDice
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(209, 350);
-            label6.Name = "label6";
-            label6.Size = new Size(56, 15);
-            label6.TabIndex = 9;
-            label6.Text = "Your dice";
+            LblYourDice.AutoSize = true;
+            LblYourDice.Location = new Point(207, 350);
+            LblYourDice.Name = "LblYourDice";
+            LblYourDice.Size = new Size(56, 15);
+            LblYourDice.TabIndex = 9;
+            LblYourDice.Text = "Your dice";
             // 
-            // label7
+            // LblPlayAgain
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(209, 176);
-            label7.Name = "label7";
-            label7.Size = new Size(66, 15);
-            label7.TabIndex = 10;
-            label7.Text = "Play again?";
-            label7.Visible = false;
+            LblPlayAgain.AutoSize = true;
+            LblPlayAgain.Location = new Point(209, 176);
+            LblPlayAgain.Name = "LblPlayAgain";
+            LblPlayAgain.Size = new Size(66, 15);
+            LblPlayAgain.TabIndex = 10;
+            LblPlayAgain.Text = "Play again?";
+            LblPlayAgain.Visible = false;
             // 
-            // button1
+            // BtnStartGame
             // 
-            button1.Location = new Point(199, 203);
-            button1.Name = "button1";
-            button1.Size = new Size(81, 41);
-            button1.TabIndex = 11;
-            button1.Text = "Start Game";
-            button1.UseVisualStyleBackColor = true;
+            BtnStartGame.Location = new Point(199, 203);
+            BtnStartGame.Name = "BtnStartGame";
+            BtnStartGame.Size = new Size(81, 41);
+            BtnStartGame.TabIndex = 11;
+            BtnStartGame.Text = "Start Game";
+            BtnStartGame.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnYes
             // 
-            button2.Location = new Point(101, 197);
-            button2.Name = "button2";
-            button2.Size = new Size(92, 53);
-            button2.TabIndex = 12;
-            button2.Text = "Yes";
-            button2.UseVisualStyleBackColor = true;
-            button2.Visible = false;
+            BtnYes.Location = new Point(101, 197);
+            BtnYes.Name = "BtnYes";
+            BtnYes.Size = new Size(92, 53);
+            BtnYes.TabIndex = 12;
+            BtnYes.Text = "Yes";
+            BtnYes.UseVisualStyleBackColor = true;
+            BtnYes.Visible = false;
             // 
-            // button3
+            // BtnNo
             // 
-            button3.Location = new Point(286, 197);
-            button3.Name = "button3";
-            button3.Size = new Size(92, 53);
-            button3.TabIndex = 13;
-            button3.Text = "No";
-            button3.UseVisualStyleBackColor = true;
-            button3.Visible = false;
+            BtnNo.Location = new Point(286, 197);
+            BtnNo.Name = "BtnNo";
+            BtnNo.Size = new Size(92, 53);
+            BtnNo.TabIndex = 13;
+            BtnNo.Text = "No";
+            BtnNo.UseVisualStyleBackColor = true;
+            BtnNo.Visible = false;
             // 
             // FrmMiniDiceGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(484, 477);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(BtnNo);
+            Controls.Add(BtnYes);
+            Controls.Add(BtnStartGame);
+            Controls.Add(LblPlayAgain);
+            Controls.Add(LblYourDice);
+            Controls.Add(LblOpponentsDice);
+            Controls.Add(LblPlayerDiceNumTwo);
+            Controls.Add(LblPlayerDiceNumOne);
+            Controls.Add(LblOpponentDiceNumTwo);
+            Controls.Add(LblOpponentDiceNumOne);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -207,15 +211,15 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Label LblOpponentDiceNumOne;
+        private Label LblOpponentDiceNumTwo;
+        private Label LblPlayerDiceNumOne;
+        private Label LblPlayerDiceNumTwo;
+        private Label LblOpponentsDice;
+        private Label LblYourDice;
+        private Label LblPlayAgain;
+        private Button BtnStartGame;
+        private Button BtnYes;
+        private Button BtnNo;
     }
 }
