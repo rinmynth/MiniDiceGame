@@ -1,8 +1,8 @@
 namespace MiniDiceGame
 {
-    public partial class Form1 : Form
+    public partial class FrmMiniDiceGame : Form
     {
-        public Form1()
+        public FrmMiniDiceGame()
         {
             InitializeComponent();
         }
